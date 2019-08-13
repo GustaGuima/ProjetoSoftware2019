@@ -1,4 +1,4 @@
-package udc.edu.exercicio72;
+package udc.edu.exercicio7_2;
 
 public class Principal {
 	

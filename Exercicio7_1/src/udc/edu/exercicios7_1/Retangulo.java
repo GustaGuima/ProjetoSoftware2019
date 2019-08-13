@@ -1,4 +1,4 @@
-package udc.edu.exercicio135;
+package udc.edu.exercicios7_1;
 
 public class Retangulo {
 
