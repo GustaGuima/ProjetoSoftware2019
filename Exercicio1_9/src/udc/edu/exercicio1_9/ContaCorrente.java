@@ -1,11 +1,16 @@
 package udc.edu.exercicio1_9;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ContaCorrente {
 	
 	private String numero;
 	private String agencia;
 	private float saldo;
 	private boolean status;
+	
+	private List<Movimentacao> movimentacoes = new ArrayList<>();
 	
 	//Constructors
 	public ContaCorrente() {
@@ -45,6 +50,13 @@ public class ContaCorrente {
 	}
 	public void setStatus(boolean status) {
 		this.status = status;
+	}
+	
+	public List<Movimentacao> getMovimentacoes() {
+		return movimentacoes;
+	}
+	public void setMovimentacoes(List<Movimentacao> movimentacoes) {
+		this.movimentacoes = movimentacoes;
 	}
 	
 	
