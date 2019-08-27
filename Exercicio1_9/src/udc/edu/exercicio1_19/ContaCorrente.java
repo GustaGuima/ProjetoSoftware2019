@@ -1,4 +1,4 @@
-package udc.edu.exercicio1_9;
+package udc.edu.exercicio1_19;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 public class ContaCorrente {
 	
 	private String numero;
-	private String agencia;
+	private float limite;
 	private float saldo;
 	private boolean status;
 	
@@ -15,10 +15,10 @@ public class ContaCorrente {
 	//Constructors
 	public ContaCorrente() {
 	}
-	public ContaCorrente(String numero, String agencia, float saldo, boolean status) {
+	public ContaCorrente(String numero, float limite, float saldo, boolean status) {
 		super();
 		this.numero = numero;
-		this.agencia = agencia;
+		this.limite = limite;
 		this.saldo = saldo;
 		this.status = status;
 	}
@@ -31,11 +31,11 @@ public class ContaCorrente {
 		this.numero = numero;
 	}
 	
-	public String getAgencia() {
-		return agencia;
+	public float getLimite() {
+		return limite;
 	}
-	public void setAgencia(String agencia) {
-		this.agencia = agencia;
+	public void setLimite(float limite) {
+		this.limite = limite;
 	}
 	
 	public float getSaldo() {

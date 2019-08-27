@@ -1,4 +1,4 @@
-package udc.edu.exercicio1_9;
+package udc.edu.exercicio1_19;
 
 public class Movimentacao {
 	
@@ -38,6 +38,14 @@ public class Movimentacao {
 	public void setTipo(boolean tipo) {
 		this.tipo = tipo;
 	}
+	@Override
+	public String toString() {
+		return "Movimentacao [descricao=" + descricao + ", valor=" + valor + ", tipo=" + tipo + "]";
+	}
+	
+	
+	
+	
 	
 	
 
