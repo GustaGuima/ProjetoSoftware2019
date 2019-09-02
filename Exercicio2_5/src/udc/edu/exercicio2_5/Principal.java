@@ -6,7 +6,7 @@ public class Principal {
 		Fibo f = new Fibo(10);
 				
 		for(int i = 0; i < f.getN(); i++) {
-			System.out.println(f.fibonacci(f.getN()));
+			System.out.println(f.fibonacci(i));
 		}
 	}
 
