@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Banco {
 	
-	List<ContaCorrente> contas = new ArrayList<>();
+	private List<ContaCorrente> contas = new ArrayList<>();
 	
 	public Banco() {
 	}
@@ -83,10 +83,10 @@ public class Banco {
 		return conta.getSaldo();
 	}
 	
-	public String extrato(ContaCorrente conta) {
+	public void extrato(ContaCorrente conta) {
 		for(int i = 0; i < contas.size(); i++) {
 			if(!contas.get(i).equals(conta)) {
-				return null;
+				return;
 			}
 		}
 		

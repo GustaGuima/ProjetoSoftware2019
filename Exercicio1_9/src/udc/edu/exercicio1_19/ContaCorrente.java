@@ -59,6 +59,14 @@ public class ContaCorrente {
 		this.movimentacoes = movimentacoes;
 	}
 	
+	@Override
+	public String toString() {
+		return "ContaCorrente [numero=" + numero + ", limite=" + limite + ", saldo=" + saldo + ", status=" + status
+				+ ", movimentacoes=" + movimentacoes + "]";
+	}
+	
+	
+	
 	
 
 }
