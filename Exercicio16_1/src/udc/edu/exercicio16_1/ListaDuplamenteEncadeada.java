@@ -4,6 +4,48 @@ import java.util.ArrayList;
 
 public class ListaDuplamenteEncadeada {
 	
+	
+	public class IteratorConcreto implements Iterator{
+
+		private No noAtual;
+		
+		
+		public IteratorConcreto(No noAtual) {
+			this.noAtual = noAtual;
+		}
+		
+		@Override
+		public Object getDados() {
+			if(noAtual == null) {
+				return null;
+			}
+			return noAtual.getValor();
+		}
+
+		@Override
+		public Object proximo() {
+			if(noAtual == null) {
+				return null;
+			}
+			Object obj = noAtual.getValor();
+			noAtual = noAtual.getProximo();
+			return obj;
+		}
+
+		@Override
+		public Object anterior() {
+			if(noAtual == null) {
+				return null;
+			}
+			Object obj = noAtual.getValor();
+			noAtual = noAtual.getAnterior();
+			return obj;
+		}
+		
+		
+	}
+	
+	
 	private No primeiro = null, ultimo = null;
 
 	
