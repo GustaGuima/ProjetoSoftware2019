@@ -23,13 +23,16 @@ public class Numerico {
 	
 	public int novoX() {
 		if(numero == 1) {
+			System.out.println(numero);
 			return numero;
 		}
 		if(numero % 2 == 0) {
 			numero = numero / 2;
+			System.out.println(numero);
 			novoX();
 		}else {
-			numero = 2 * (numero / 3) + 1;
+			numero = 2 * numero / 3 + 1;
+			System.out.println(numero);
 			novoX();
 		}
 		return numero;
