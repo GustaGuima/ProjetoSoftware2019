@@ -1,4 +1,6 @@
-package udc.edu.exercicios7_1;
+package udc.edu.exercicios7_1_3;
+
+import udc.edu.exercicios7_1_2.Linha;
 
 public class Retangulo {
 

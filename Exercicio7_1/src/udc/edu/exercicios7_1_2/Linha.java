@@ -1,4 +1,6 @@
-package udc.edu.exercicios7_1;
+package udc.edu.exercicios7_1_2;
+
+import udc.edu.exercicios7_1_1.Ponto2d;
 
 public class Linha {
 

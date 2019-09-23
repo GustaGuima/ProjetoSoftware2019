@@ -1,5 +1,9 @@
 package udc.edu.exercicios7_1;
 
+import udc.edu.exercicios7_1_1.Ponto2d;
+import udc.edu.exercicios7_1_2.Linha;
+import udc.edu.exercicios7_1_3.Retangulo;
+
 public class Principal {
 
 	public static void main(String[] args) {
