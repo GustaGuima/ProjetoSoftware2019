@@ -12,9 +12,7 @@ public class Principal {
 
 		Linha l1 = new Linha(p1, p2);
 
-		Retangulo r1 = new Retangulo(l1);
 
-		System.out.println(r1);
 	}
 
 }

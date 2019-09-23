@@ -1,6 +1,8 @@
 package udc.edu.exercicios7_1_1;
 
-public class Ponto2d {
+import udc.edu.exercicios7_1.FormaGeometrica;
+
+public class Ponto2d extends FormaGeometrica{
 
 	private int x;
 	private int y;
@@ -72,6 +74,31 @@ public class Ponto2d {
 	@Override
 	public String toString() {
 		return "(" + x + "," + y + ")";
+	}
+
+	@Override
+	public Ponto2d centro() {
+		return new Ponto2d(x,y);
+	}
+
+	@Override
+	public float perimetro() {
+		return 0;
+	}
+
+	@Override
+	public float area() {
+		return 0;
+	}
+
+	@Override
+	public float largura() {
+		return 0;
+	}
+
+	@Override
+	public float altura() {
+		return 0;
 	}
 
 }

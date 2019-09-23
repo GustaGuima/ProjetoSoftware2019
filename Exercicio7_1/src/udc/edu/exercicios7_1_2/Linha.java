@@ -1,8 +1,9 @@
 package udc.edu.exercicios7_1_2;
 
+import udc.edu.exercicios7_1.FormaGeometrica;
 import udc.edu.exercicios7_1_1.Ponto2d;
 
-public class Linha {
+public class Linha extends FormaGeometrica{
 
 	private Ponto2d x;
 	private Ponto2d y;
@@ -36,16 +37,6 @@ public class Linha {
 	}
 
 
-	public Ponto2d centro() {
-		return new Ponto2d(x.getX()+y.getX()/2,
-						   x.getY() + y.getY()/2);
-	}
-	
-	public float distancia(Linha linha) {
-		return centro().distancia(linha.centro());
-	}
-
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -71,6 +62,32 @@ public class Linha {
 	@Override
 	public String toString() {
 		return "Linha(" + x + "," + y + ")";
+	}
+
+	@Override
+	public float perimetro() {
+		return x.distancia(y);
+	}
+
+	@Override
+	public float area() {
+		return 0;
+	}
+
+	@Override
+	public float largura() {
+		return Math.abs(x.getX() - y.getX());
+	}
+
+	@Override
+	public float altura() {
+		return Math.abs(x.getY() - y.getY());
+	}
+
+	@Override
+	public Ponto2d centro() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
