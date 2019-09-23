@@ -6,7 +6,18 @@ public class Linha {
 
 	private Ponto2d x;
 	private Ponto2d y;
+	
+	public Linha() {
+		x = new Ponto2d();
+		y = new Ponto2d();
+	}
 
+	public Linha(Ponto2d x, Ponto2d y) {
+		super();
+		x = new Ponto2d();
+		this.x = new Ponto2d(x.getX(), x.getY());
+		this.y = new Ponto2d(y.getX(), y.getY());
+	}
 	// Getters and Setters
 	public Ponto2d getX() {
 		return x;
@@ -24,13 +35,37 @@ public class Linha {
 		this.y = y;
 	}
 
-	public Linha() {
+
+	public Ponto2d centro() {
+		return new Ponto2d(x.getX()+y.getX()/2,
+						   x.getY() + y.getY()/2);
+	}
+	
+	public float distancia(Linha linha) {
+		return centro().distancia(linha.centro());
 	}
 
-	public Linha(Ponto2d x, Ponto2d y) {
-		super();
-		this.x = x;
-		this.y = y;
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Linha other = (Linha) obj;
+		if (x == null) {
+			if (other.x != null)
+				return false;
+		} else if (!x.equals(other.x))
+			return false;
+		if (y == null) {
+			if (other.y != null)
+				return false;
+		} else if (!y.equals(other.y))
+			return false;
+		return true;
 	}
 
 	@Override
