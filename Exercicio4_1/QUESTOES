@@ -1,0 +1,38 @@
+1. Que tipo de repetição seria apropriada para calcular a soma dos primeiros 100 inteiros positivos?
+	
+	R: A repetiçao adequada seria a FOR, apenas pedir um contador ir de 0 ate 100.
+		
+
+2. Que tipo de repetição seria apropriada para calcular a soma de um número arbitrário de inteiros
+positivos?
+	
+	R: A melhor repetiçao ainda seria o FOR, apenas pedir para um contador ir de 0 ate o numero que dejesassem.
+
+
+3. Descreva brevemente como cada uma dessas tarefas poderia ser realizada.
+
+	R: Exemplo da questao 1:
+		int contador = 0;
+		for(i=0; i < 100; i++){
+			contador += i;
+		}
+		
+		Exemplo da questao 2:
+		
+		int numero;
+		int contador = 0;
+		setNumero(Numero que deseja);
+		
+		for(i = 0; i < numero; i++){
+			contador += i;
+		}
+		
+
+4. Qual é a diferença entre pré-incrementar e pós-incrementar uma variável?
+
+	Valor e passado mas apenas depois da primeira repetiçao ele passa a ter aquele valor
+	
+	exemplo:
+	
+	i++ - Pós incremento = i passa a receber mais um imediatamente.
+	++i - Pré incremento = i passa a receber mais um na proxima repetiçao.
