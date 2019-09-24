@@ -4,10 +4,10 @@ import udc.edu.exercicio13_5.FormaGeometrica;
 
 public class Ponto2d extends FormaGeometrica{
 
-	private int x;
-	private int y;
+	private double x;
+	private double y;
 
-	public int getX() {
+	public double getX() {
 		return x;
 	}
 
@@ -15,7 +15,7 @@ public class Ponto2d extends FormaGeometrica{
 		this.x = x;
 	}
 
-	public int getY() {
+	public double getY() {
 		return y;
 	}
 
@@ -24,9 +24,11 @@ public class Ponto2d extends FormaGeometrica{
 	}
 
 	public Ponto2d() {
+		x = 0;
+		y = 0;
 	}
 
-	public Ponto2d(int x, int y) {
+	public Ponto2d(double x, double y) {
 		super();
 		this.x = x;
 		this.y = y;
@@ -49,8 +51,8 @@ public class Ponto2d extends FormaGeometrica{
 		return "Origem";
 	}
 	
-	public float distancia(Ponto2d ponto) {
-		return (float) Math.sqrt(x-ponto.x)*(x-ponto.x)+
+	public double distancia(Ponto2d ponto) {
+		return (double) Math.sqrt(x-ponto.x)*(x-ponto.x)+
 				(y-ponto.y)*(y-ponto.y);
 	}
 	
@@ -82,22 +84,22 @@ public class Ponto2d extends FormaGeometrica{
 	}
 
 	@Override
-	public float perimetro() {
+	public double perimetro() {
 		return 0;
 	}
 
 	@Override
-	public float area() {
+	public double area() {
 		return 0;
 	}
 
 	@Override
-	public float largura() {
+	public double largura() {
 		return 0;
 	}
 
 	@Override
-	public float altura() {
+	public double altura() {
 		return 0;
 	}
 
