@@ -9,17 +9,27 @@ public class Linha extends FormaGeometrica{
 	private Ponto2d y;
 	
 	public Linha() {
-		x = new Ponto2d();
-		y = new Ponto2d();
+		x = new Ponto2d(0,0);
+		y = new Ponto2d(1,1);
+	}
+	
+	public Linha(Ponto2d y) {
+		x = new Ponto2d(0,0);
+		y = new Ponto2d(y.getX(), y.getY());
 	}
 
 	public Linha(Ponto2d x, Ponto2d y) {
 		super();
-		x = new Ponto2d();
 		this.x = new Ponto2d(x.getX(), x.getY());
 		this.y = new Ponto2d(y.getX(), y.getY());
 	}
-	// Getters and Setters
+	
+	public Linha(double x1, double y1, double x2, double y2) {
+		this.x = new Ponto2d(x1, y1);
+		this.y = new Ponto2d(x2, y2);
+	}
+	
+	//Getters and Setters
 	public Ponto2d getX() {
 		return x;
 	}
