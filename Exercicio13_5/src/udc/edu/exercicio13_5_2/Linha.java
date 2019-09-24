@@ -68,6 +68,10 @@ public class Linha extends FormaGeometrica{
 			return false;
 		return true;
 	}
+	
+	public double calcularAngulo() {
+		return Math.atan((y.getY() - x.getY())/(y.getX() - x.getX()));
+	}
 
 	@Override
 	public String toString() {
